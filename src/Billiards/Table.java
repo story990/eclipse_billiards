@@ -161,22 +161,22 @@ public class Table extends JPanel implements MouseListener,
 		pockets = new Vector<Pocket>();
 		Pocket p;
 
-		p = new Pocket("Top Left",     Pocket.STANDARD_COLOR, 86, 86, 48);
+		p = new Pocket("Top Left",     Pocket.STANDARD_COLOR, 86, 86, 36);
 		pockets.add( p );
 
-		p = new Pocket("Top Mid",      Pocket.STANDARD_COLOR, 508, 76, 48);
+		p = new Pocket("Top Mid",      Pocket.STANDARD_COLOR, 508, 76, 36);
 		pockets.add( p );
 
-		p = new Pocket("Top Right",    Pocket.STANDARD_COLOR, 930, 86, 48);
+		p = new Pocket("Top Right",    Pocket.STANDARD_COLOR, 930, 86, 36);
 		pockets.add( p );
 
-		p = new Pocket("Bottom Left",  Pocket.STANDARD_COLOR, 86, 496, 48);
+		p = new Pocket("Bottom Left",  Pocket.STANDARD_COLOR, 86, 496, 36);
 		pockets.add( p );
 
-		p = new Pocket("Bottom Mid",   Pocket.STANDARD_COLOR, 508, 506, 48);
+		p = new Pocket("Bottom Mid",   Pocket.STANDARD_COLOR, 508, 506, 36);
 		pockets.add( p );
 
-		p = new Pocket("Bottom Right", Pocket.STANDARD_COLOR, 930, 496, 48);
+		p = new Pocket("Bottom Right", Pocket.STANDARD_COLOR, 930, 496, 36);
 		pockets.add( p );
 
 	}
@@ -448,7 +448,8 @@ public class Table extends JPanel implements MouseListener,
 		int fallenCount = fallen.size();
 		c.x = 270+(fallenCount*31);
 		c.y = 600;
-	}
+		}
+		
 	
 	
 	/*******************************************************
