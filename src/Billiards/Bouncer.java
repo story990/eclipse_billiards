@@ -87,7 +87,7 @@ public class Bouncer extends JFrame implements ActionListener {
         addMenuItems(opts, "*Friction, *Aim Help, -, *Anti-Overlap, -");
 
         // help menu
-        addMenuItems(help, "About");
+        addMenuItems(help, "About ,-, About2");
 
         // lets see it!
         setJMenuBar(menubar);
@@ -168,6 +168,12 @@ public class Bouncer extends JFrame implements ActionListener {
                     "\n" +
                     "Monday, January 31th, 2011",
                     "About Billiard Table", JOptionPane.DEFAULT_OPTION);
+        
+        else if (s.equals("About2")) // about dialog2
+            JOptionPane.showMessageDialog(this,
+                    "modification by jinwoo\n"+
+                    "Wendseday, April 28th, 2021",
+                    "About Billiard Table", JOptionPane.INFORMATION_MESSAGE);
 
         else
             System.out.println(s);
